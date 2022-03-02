@@ -1,0 +1,5 @@
+React
+Alan AI SDK
+Material UI Library
+All the other required libraries are in the package.json and package-lock.json files
+Once you run npm install, all the required packages and dependencies will be installed during the launching process

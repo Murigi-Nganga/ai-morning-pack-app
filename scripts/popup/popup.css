@@ -1,0 +1,111 @@
+.popup {
+    max-width: 394px;
+    height: 324px;
+    max-height: 324px;
+    background: #fff;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, .25);
+    overflow: hidden;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column
+}
+
+.top .popup {
+    flex-direction: column-reverse
+}
+
+.top .popup_body {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 20px
+}
+
+.popup_header {
+    height: 190px;
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.n5la_tH3rKiVODuANA9kvAHaD4&pid=Api&P=0&w=310&h=163);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.popup_body {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #000;
+    padding: 6px 70px 0;
+    height: 133px
+}
+
+.popup_pointer-button {
+    width: 170px;
+    height: 36px;
+    margin: 7px auto 10px;
+    position: relative
+}
+
+.right .popup_pointer-button {
+    padding-right: 16px
+}
+
+.left .popup_pointer-button {
+    padding-left: 16px
+}
+
+.popup_pointer-button_text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff
+}
+
+.popup_pointer-button_bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #0D75FF;
+    border-radius: 7px
+}
+
+.popup_pointer-button_arrow {
+    position: absolute;
+    background-color: #0D75FF;
+    text-align: left;
+    top: 3px;
+    right: -10px;
+    transform: rotate(-90deg) skewX(-30deg) scale(1, .866)
+}
+
+.popup_pointer-button_arrow:after,
+.popup_pointer-button_arrow:before {
+    content: '';
+    position: absolute;
+    background-color: inherit
+}
+
+.popup_pointer-button_arrow,
+.popup_pointer-button_arrow:after,
+.popup_pointer-button_arrow:before {
+    width: 20px;
+    height: 20px;
+    border-top-right-radius: 30%
+}
+
+.popup_pointer-button_arrow:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%)
+}
+
+.popup_pointer-button_arrow:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%)
+}
+
+.left .popup_pointer-button_bg {
+    transform: rotate(180deg)
+}
